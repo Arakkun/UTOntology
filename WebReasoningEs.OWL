@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Comune"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTBorgo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTCasa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTColle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTContrada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTCozzo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTFattoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTFondaco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTLocalità"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTMasseria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTMonte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTPerriere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTPoggio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTStazione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTTorre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UTVallone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitaTopologica"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haComune"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haUT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haId_UT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haNomeComune"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haToponimo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ramacca"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#UT"/>
+        <Class IRI="#UnitaTopologica"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTBorgo"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Borgo.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTCasa"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Casa.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTColle"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Colle.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTContrada"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Contrada.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTCozzo"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Cozzo.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTFattoria"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Fattoria.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTFondaco"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Fondaco.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTLocalità"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Località.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTMasseria"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Masseria.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTMonte"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Monte.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTPerriere"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Perriere.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTPoggio"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Poggio.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTStazione"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Stazione.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTTorre"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Torre.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UTVallone"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haToponimo"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>.*Vallone.*</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#UTBorgo"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTCasa"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTColle"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTContrada"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTCozzo"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTFattoria"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTFondaco"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTLocalità"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTMasseria"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTMonte"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTPerriere"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTPoggio"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTStazione"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTTorre"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UTVallone"/>
+        <Class IRI="#UT"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Comune"/>
+        <Class IRI="#UT"/>
+    </DisjointClasses>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#haComune"/>
+        <NamedIndividual IRI="#R1"/>
+        <NamedIndividual IRI="#Ramacca"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haId_UT"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal>R1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haToponimo"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal>Contrada Palma</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haNomeComune"/>
+        <NamedIndividual IRI="#Ramacca"/>
+        <Literal>Ramacca</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#haComune"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#haUT"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#haComune"/>
+        <ObjectProperty IRI="#haUT"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#haComune"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#haComune"/>
+        <Class IRI="#UT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#haComune"/>
+        <Class IRI="#Comune"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haId_UT"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haNomeComune"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haToponimo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haId_UT"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haToponimo"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haId_UT"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haNomeComune"/>
+        <Class IRI="#Comune"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haToponimo"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#haId_UT"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                <Literal>R{1}[0-9]+[a-z]*</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haNomeComune"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haToponimo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <HasKey>
+        <Class IRI="#Comune"/>
+        <DataProperty IRI="#haNomeComune"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="#UnitaTopologica"/>
+        <DataProperty IRI="#haId_UT"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="#UnitaTopologica"/>
+        <DataProperty IRI="#haToponimo"/>
+    </HasKey>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
