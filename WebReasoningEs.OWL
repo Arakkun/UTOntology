@@ -73,10 +73,43 @@
         <ObjectProperty IRI="#haUT"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#haAltitudineMASL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haAscissaFuso33"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haCompilatore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haDescrizione"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haDimensioneA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haDimensioneB"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haDimensioneEttari"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#haId_UT"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#haLatitudine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haLongitudine"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#haNomeComune"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haOrdinataFuso33"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haResponsabile"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#haToponimo"/>
@@ -341,9 +374,59 @@
         <NamedIndividual IRI="#Ramacca"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#haAltitudineMASL"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haAscissaFuso33"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">473476</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haCompilatore"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal>Laureanti 2007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haDescrizione"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal>Contrada Palma è situata immediatamente a N del corso del fiume Gornalunga: l’area è densamente coltivata, solo in parte come agrumeto. Lo sfruttamento agricolo intensivo ha modificato profondamente il paesaggio locale: in particolare, questo settore di Contrada Palma è stato profondamente modificato dalla costruzione di due bacini artificiali. L&apos;area di frammenti fittili (m 5 x 5) è stata individuata in un agrumeto di recente piantumazione: la distribuzione dei reperti risultava omogenea nell’intero areale. I materiali rinvenuti consistono in frammenti di tegole riconducibili a età romana, rozza terracotta e ceramica fine da mensa (Sigillata D). Precedenti ricognizioni condotte nell’area da E. Procelli avevano in passato documentato la presenza a Contrada Palma di ceramica preistorica. Si segnalano i resti di un selciato stradale, realizzato in basole di forma rettangolare, probabilmente di età borbonica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haDimensioneA"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haDimensioneB"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haDimensioneEttari"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0025</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#haId_UT"/>
         <NamedIndividual IRI="#R1"/>
         <Literal>R1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haLatitudine"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">37.423244</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haLongitudine"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">14.700228</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haOrdinataFuso33"/>
+        <NamedIndividual IRI="#R1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4141868</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#haToponimo"/>
@@ -370,6 +453,9 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#haComune"/>
     </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#haUT"/>
+    </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#haComune"/>
         <Class IRI="#UT"/>
@@ -379,7 +465,43 @@
         <Class IRI="#Comune"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
+        <DataProperty IRI="#haAltitudineMASL"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haAscissaFuso33"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haCompilatore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haDescrizione"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haDimensioneA"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haDimensioneB"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haDimensioneEttari"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#haId_UT"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haLatitudine"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haLongitudine"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -387,17 +509,97 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#haOrdinataFuso33"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haResponsabile"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#haToponimo"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <FunctionalDataProperty>
+        <DataProperty IRI="#haAltitudineMASL"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haAscissaFuso33"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haCompilatore"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haDescrizione"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haDimensioneA"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haDimensioneB"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haDimensioneEttari"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
         <DataProperty IRI="#haId_UT"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haLatitudine"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haLongitudine"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haNomeComune"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haOrdinataFuso33"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haResponsabile"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#haToponimo"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
+        <DataProperty IRI="#haAltitudineMASL"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haAscissaFuso33"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haCompilatore"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haDescrizione"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haDimensioneA"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haDimensioneB"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haDimensioneEttari"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#haId_UT"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haLatitudine"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haLongitudine"/>
         <Class IRI="#UnitaTopologica"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -405,9 +607,45 @@
         <Class IRI="#Comune"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#haOrdinataFuso33"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haResponsabile"/>
+        <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#haToponimo"/>
         <Class IRI="#UnitaTopologica"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#haAltitudineMASL"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haAscissaFuso33"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haCompilatore"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haDescrizione"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haDimensioneA"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haDimensioneB"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haDimensioneEttari"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#haId_UT"/>
         <DatatypeRestriction>
@@ -418,7 +656,23 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#haLatitudine"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haLongitudine"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#haNomeComune"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haOrdinataFuso33"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haResponsabile"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
