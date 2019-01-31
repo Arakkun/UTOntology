@@ -16,6 +16,9 @@
         <Class IRI="#Comune"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PosIGM25000"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#UT"/>
     </Declaration>
     <Declaration>
@@ -70,6 +73,9 @@
         <ObjectProperty IRI="#haComune"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#haPosIGM25000"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#haUT"/>
     </Declaration>
     <Declaration>
@@ -94,6 +100,9 @@
         <DataProperty IRI="#haDimensioneEttari"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#haFoglioIGM25000"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#haId_UT"/>
     </Declaration>
     <Declaration>
@@ -107,6 +116,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#haOrdinataFuso33"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haOrientamentoIGM25000"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haQuadranteIGM25000"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#haResponsabile"/>
@@ -366,6 +381,14 @@
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Comune"/>
+        <Class IRI="#PosIGM25000"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Comune"/>
+        <Class IRI="#UT"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PosIGM25000"/>
         <Class IRI="#UT"/>
     </DisjointClasses>
     <ObjectPropertyAssertion>
@@ -443,6 +466,10 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#haPosIGM25000"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#haUT"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -453,6 +480,9 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#haComune"/>
     </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#haPosIGM25000"/>
+    </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#haUT"/>
     </InverseFunctionalObjectProperty>
@@ -460,9 +490,25 @@
         <ObjectProperty IRI="#haComune"/>
         <Class IRI="#UT"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#haPosIGM25000"/>
+        <Class IRI="#UT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#haUT"/>
+        <Class IRI="#Comune"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#haComune"/>
         <Class IRI="#Comune"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#haPosIGM25000"/>
+        <Class IRI="#PosIGM25000"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#haUT"/>
+        <Class IRI="#UT"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#haAltitudineMASL"/>
@@ -493,6 +539,10 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#haFoglioIGM25000"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#haId_UT"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -510,6 +560,14 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#haOrdinataFuso33"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haOrientamentoIGM25000"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haQuadranteIGM25000"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -589,6 +647,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#haDimensioneEttari"/>
         <Class IRI="#UnitaTopologica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haFoglioIGM25000"/>
+        <Class IRI="#PosIGM25000"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#haId_UT"/>
@@ -611,6 +673,14 @@
         <Class IRI="#UnitaTopologica"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#haOrientamentoIGM25000"/>
+        <Class IRI="#PosIGM25000"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haQuadranteIGM25000"/>
+        <Class IRI="#PosIGM25000"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#haResponsabile"/>
         <Class IRI="#UnitaTopologica"/>
     </DataPropertyDomain>
@@ -624,7 +694,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#haAscissaFuso33"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#haCompilatore"/>
@@ -636,15 +706,19 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#haDimensioneA"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#haDimensioneB"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#haDimensioneEttari"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haFoglioIGM25000"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#haId_UT"/>
@@ -669,7 +743,25 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#haOrdinataFuso33"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haOrientamentoIGM25000"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                <Literal>[N/S][E/O]</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haQuadranteIGM25000"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                <Literal>I(V|I{0,2})</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#haResponsabile"/>
