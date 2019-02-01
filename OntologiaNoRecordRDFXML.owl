@@ -1,0 +1,1168 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haComune -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haComune">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haUT"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#Comune"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haPosIGM25000 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haPosIGM25000">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#PosIGM25000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haUT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haUT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#Comune"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haAltitudineMASL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haAltitudineMASL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haAnomalia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haAnomalia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haAscissaFuso33 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haAscissaFuso33">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haCompilatore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haCompilatore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haDescrizione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haDescrizione">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haDimensioneA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haDimensioneA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haDimensioneB -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haDimensioneB">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haDimensioneEttari -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haDimensioneEttari">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haFoglioIGM25000 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haFoglioIGM25000">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#PosIGM25000"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haId_UT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haId_UT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:pattern>R{1}[0-9]+[a-z]*</xsd:pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haLatitudine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haLatitudine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haLongitudine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haLongitudine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haNomeComune -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haNomeComune">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#Comune"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haOrdinataFuso33 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haOrdinataFuso33">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haOrientamentoIGM25000 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haOrientamentoIGM25000">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#PosIGM25000"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:pattern>[N/S][E/O]</xsd:pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haQuadranteIGM25000 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haQuadranteIGM25000">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#PosIGM25000"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:pattern>I(V|I{0,2})</xsd:pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haResponsabile -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haResponsabile">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoUT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoUT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#AnomaliaGoogleMaps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#AnomaliaGoogleMaps">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haAnomalia"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*GOOGLE MAPS.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#AnomaliaUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#AnomaliaUT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#AnomaliaUT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#Comune -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#Comune">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#PosIGM25000"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haNomeComune"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#PosIGM25000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#PosIGM25000">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoUT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoUT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UT">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTAreaFrammenti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTAreaFrammenti">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoUT"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Area di frammenti.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTAreaSepolcrale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTAreaSepolcrale">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoUT"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Area sepolcrale.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTBorgo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTBorgo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Borgo.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTCasa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTCasa">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Casa.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTColle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTColle">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Colle.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTContrada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTContrada">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Contrada.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTCozzo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTCozzo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Cozzo.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTFattoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTFattoria">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Fattoria.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTFondaco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTFondaco">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Fondaco.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTLocalità -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTLocalità">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Località.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTMasseria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTMasseria">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Masseria.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTMonte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTMonte">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Monte.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTPerriere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTPerriere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Perriere.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTPoggio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTPoggio">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Poggio.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTRinvSporadico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTRinvSporadico">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoUT"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*[S,s]poradico.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoCisterna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoCisterna">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Cisterna.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoFattoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoFattoria">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Fattoria.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoFrammentiFittili -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoFrammentiFittili">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Area di frammenti fittili.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoFrequentazione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoFrequentazione">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Frequentazione.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoInsediamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoInsediamento">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Insediamento.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoMansio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoMansio">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Mansio.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoPhourion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoPhourion">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Phourion.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoStatio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoStatio">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Statio.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTomba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTomba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTombaGrotticella -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTombaGrotticella">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Tombe a grotticella.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTomba"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTombaIsolata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTombaIsolata">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Tomba isolata.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTomba"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTombaTholos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTombaTholos">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Tombe a tholos.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoTomba"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoVillaggio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTSitoVillaggio">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoSito"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Villaggio.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoSito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTStazione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTStazione">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Stazione.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTStrutture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTStrutture">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoUT"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Strutture.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTTomba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTTomba">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haTipoUT"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Tomba.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#TipoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTTorre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTTorre">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Torre.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTVallone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UTVallone">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>.*Vallone.*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#ToponimoUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#UnitaTopologica">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haId_UT"/>
+        </owl:hasKey>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/alessiodesktop/ontologies/2019/0/untitled-ontology-10#haToponimo"/>
+        </owl:hasKey>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
